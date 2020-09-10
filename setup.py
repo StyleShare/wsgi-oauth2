@@ -36,4 +36,4 @@ class upload_doc(distutils.cmd.Command):
         shutil.rmtree(path)
 
 
-setup(cmdclass={'upload_doc': upload_doc, 'upload_docs': upload_doc})
+setup(cmdclass={'upload_doc': upload_doc, 'upload_docs': upload_doc}, use_scm_version=True)
